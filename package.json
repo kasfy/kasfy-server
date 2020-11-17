@@ -1,15 +1,21 @@
 {
  "name": "kasfy-server",
- "version": "0.0.1",
+ "version": "0.0.3",
  "description": "node js framework for smart back-end",
  "main": "server.js",
+ "bin": {
+  "kasfy-server": "server.js"
+ },
  "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "author": "katheeskumar [https://github.com/katheesh]",
  "license": "MIT",
  "dependencies": {
-
+  "body-parser": "^1.19.0",
+  "dotenv": "^8.2.0",
+  "express": "^4.17.1",
+  "express-session": "^1.17.1"
  },
  "repository": {
   "type": "git",
