@@ -1,26 +1,18 @@
 {
  "name": "kasfy-server",
- "version": "0.0.3",
+ "version": "0.0.4",
  "description": "node js framework for smart back-end",
  "main": "server.js",
  "bin": {
   "kasfy-server": "server.js"
  },
  "scripts": {
-  "start": "npm run build && node server.js",
+  "start": "nodemon node ./node_modules/babel-cli/bin/babel-node.js server.js",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "author": "katheeskumar [https://github.com/katheesh]",
  "license": "MIT",
- "dependencies": {
-  "body-parser": "^1.19.0",
-  "chalk": "^4.1.0",
-  "commander": "^5.1.0",
-  "cors": "^2.8.5",
-  "dotenv": "^8.2.0",
-  "express": "^4.17.1",
-  "express-flash": "0.0.2"
- },
+ "dependencies": {},
  "repository": {
   "type": "git",
   "url": "git+https://github.com/kasfy/kasfy-server.git"
@@ -36,9 +28,13 @@
   "url": "https://github.com/kasfy/kasfy-server/issues"
  },
  "devDependencies": {
-  "babel-cli": "^6.26.0",
-  "babel-preset-env": "^1.7.0",
-  "npm": "^6.14.8",
-  "rimraf": "^3.0.2"
+  "@babel/core": "^7.12.10",
+  "@babel/node": "^7.12.10",
+  "@babel/preset-env": "^7.12.11",
+  "babel-cli": "6.11.4",
+  "babel-plugin-transform-decorators-legacy": "^1.3.4",
+  "babel-polyfill": "6.9.1",
+  "babel-preset-node6": "11.0.0",
+  "npm": "^6.14.8"
  }
 }
